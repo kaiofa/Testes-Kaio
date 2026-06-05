@@ -5,15 +5,17 @@
 **Campo analisado:** `Authorization` (Header)
 
 ### Partições de Equivalência
+
 | Índice | Partição | Descrição | Resultado Esperado |
 | :--- | :--- | :--- | :--- |
 | **P1** | Token Ativo | Envio de token JWT válido no Header | HTTP 200 com array de vínculos ativos |
 | **P2** | Token Ausente | Requisição enviada sem o campo de autenticação | HTTP 401 — Unauthorized |
 
 ### Casos de Teste
+
 #### CT01 — Partição P1: Token Ativo
-* **Headers:** `Authorization: Bearer TOKEN_ALUNO_7`
-* **Resultado esperado:** 200 OK com a lista de conexões.
+**Headers:** `Authorization: Bearer TOKEN_ALUNO_7`  
+**Resultado esperado:** 200 OK com a lista de conexões.
 
 ---
 
@@ -24,11 +26,13 @@
 **Campos analisados:** `name`, `email`, `password`, `role` (Body)
 
 ### Partições de Equivalência
+
 | Índice | Partição | Descrição | Resultado Esperado |
 | :--- | :--- | :--- | :--- |
 | **P3** | Dados Válidos | Envio de payload completo e correto | HTTP 201 com token e dados do usuário |
 
 ### Casos de Teste
+
 #### CT02 — Partição P3: Dados Válidos
 ```json
 {
@@ -37,5 +41,5 @@
   "password": "senhaSegura123",
   "role": "RESPONDENTE"
 }
-
-resultado esperado: 201 Created com as credenciais geradas.
+```
+**Resultado esperado:** 201 Created com as credenciais geradas.
