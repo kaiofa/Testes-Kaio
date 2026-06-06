@@ -1,4 +1,4 @@
-markdown# Pergunta 7 — Implementação no Postman (2)
+# Pergunta 7 — Implementação no Postman (2)
 
 ### Endpoint: `POST http://localhost:3333/api/auth/register`
 
