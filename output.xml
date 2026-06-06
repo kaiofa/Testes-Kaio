@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.5 on win32)" generated="2026-06-06T00:47:23.012477" rpa="false" schemaversion="5">
+<suite id="s1" name="Teste2" source="C:\Users\kaiof\Downloads\Daily-Check-in-main\Daily-Check-in-main\teste2.robot">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2026-06-06T00:47:23.428752" level="INFO">Opening browser 'chrome' to base url 'http://localhost:5173/login'.</msg>
+<arg>http://localhost:5173/login</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-06-06T00:47:23.427202" elapsed="2.277734"/>
+</kw>
+<test id="s1-t1" name="CT02 - Pagina home deve carregar corretamente apos login" line="14">
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-06-06T00:47:25.706180" elapsed="0.036658"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-06-06T00:47:25.744239" level="INFO">Typing text 'idoso@teste.com' into text field 'css=input[type='email']'.</msg>
+<arg>${INPUT_EMAIL}</arg>
+<arg>idoso@teste.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-06T00:47:25.743383" elapsed="0.146914"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2026-06-06T00:47:25.890956" level="INFO">Typing password into text field 'css=input[type='password']'.</msg>
+<msg time="2026-06-06T00:47:25.921084" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${INPUT_SENHA}</arg>
+<arg>123456</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-06T00:47:25.890662" elapsed="0.075313"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-06-06T00:47:25.967780" level="INFO">Clicking button 'css=button[type='submit']'.</msg>
+<arg>${BTN_ENTRAR}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-06T00:47:25.967289" elapsed="0.132576"/>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>${URL_HOME}</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="PASS" start="2026-06-06T00:47:26.100323" elapsed="0.443017"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${TITULO_HOME}</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-06-06T00:47:26.543711" elapsed="0.028157"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-06-06T00:47:26.586688" level="INFO">Current page contains text 'Daily Check-in Sênior'.</msg>
+<arg>Daily Check-in Sênior</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-06-06T00:47:26.572181" elapsed="0.014604"/>
+</kw>
+<status status="PASS" start="2026-06-06T00:47:25.705300" elapsed="0.881762"/>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-06-06T00:47:26.587949" elapsed="2.144165"/>
+</kw>
+<status status="PASS" start="2026-06-06T00:47:23.014161" elapsed="5.718062"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Teste2" id="s1" pass="1" fail="0" skip="0">Teste2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
