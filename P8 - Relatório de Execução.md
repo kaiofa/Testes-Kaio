@@ -17,7 +17,8 @@
 
 #### Evidência (Response Body — Postman)
 
-<img width="1907" height="875" alt="Captura de tela 2026-06-02 202029" src="https://github.com/user-attachments/assets/e06e0565-7d62-4aba-bdc8-d898c0a17f77" />
+<img width="1917" height="1012" alt="Captura de tela 2026-06-02 201644" src="https://github.com/user-attachments/assets/64a3fc96-62c9-4d33-a351-c2cf7bcde170" />
+
 
 ### Resumo dos Resultados
 
