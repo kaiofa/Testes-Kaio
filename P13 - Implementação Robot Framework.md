@@ -1,30 +1,29 @@
-# Pergunta 13 — Script de Teste de Interface (2)
+# Pergunta 13 — Implementação — Script Robot Framework — Teste 2
 
 ```robot
 *** Settings ***
 Library    SeleniumLibrary
-Suite Setup       Dado que o usuário acessa o sistema local
-Suite Teardown    E fecha o navegador
+Suite Setup       Open Browser    http://localhost:5173/login    chrome
+Suite Teardown    Close Browser
 
 *** Variables ***
-${URL_HOME}            http://localhost:3000/home
-${BROWSER}             chrome
-${TITULO_ESPERADO}     Daily Check-in Sênior - Home
+${URL_HOME}        http://localhost:5173/
+${INPUT_EMAIL}     css=input[type='email']
+${INPUT_SENHA}     css=input[type='password']
+${BTN_ENTRAR}      css=button[type='submit']
+${TITULO_HOME}     xpath=//h1[contains(text(),'Daily Check-in')]
 
 *** Test Cases ***
-CT03 - Deve verificar se a página home carrega corretamente
-    [Setup]    Go To    ${URL_HOME}
-    Então a página deve carregar com o título correto
+CT02 - Pagina home deve carregar corretamente apos login
+    Maximize Browser Window
+    Input Text        ${INPUT_EMAIL}    idoso@teste.com
+    Input Password    ${INPUT_SENHA}    123456
+    Click Button      ${BTN_ENTRAR}
+    Wait Until Location Is         ${URL_HOME}    timeout=5s
+    Wait Until Element Is Visible  ${TITULO_HOME}    timeout=5s
+    Page Should Contain            Daily Check-in Sênior
 
 *** Keywords ***
-Dado que o usuário acessa o sistema local
-    Open Browser    about:blank    ${BROWSER}
-    Maximize Browser Window
-Então a página deve carregar com o título correto
-    Title Should Be    ${TITULO_ESPERADO}
 E fecha o navegador
     Close Browser
 ```
-
-**Link de referência no GitHub:**  
-https://github.com/kaiofa/Testes-Kaio/blob/main/P10-Interface-Script.robot
