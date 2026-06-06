@@ -29,3 +29,12 @@
 | Total de testes | Aprovados | Reprovados |
 | :---: | :---: | :---: |
 | 1 | 1 | 0 |
+
+
+### Arquivos de Evidência da Execução
+
+| Arquivo | Descrição | Link |
+| :--- | :--- | :--- |
+| report.html | Resumo da execução | [Abrir report.html](https://github.com/kaiofa/Testes-Kaio/blob/main/report.html) |
+| log.html | Log detalhado | [Abrir log.html](https://github.com/kaiofa/Testes-Kaio/blob/main/log.html) |
+| output.xml | Resultado bruto | [Abrir output.xml](https://github.com/kaiofa/Testes-Kaio/blob/main/output.xml) |
