@@ -1,27 +1,20 @@
 # Pergunta 9 — Modelagem do Teste de Interface (1)
 
-### Tela: Cadastro de Usuário (Daily Check-in Sênior)
+### Tela: Página de Login (Daily Check-in Sênior)
 **Técnica Utilizada:** Tabela de Decisão  
-**Cenário:** Cadastro com falha — E-mail já cadastrado
+**Cenário:** Login válido com redirecionamento para Home
 
 ### Tabela de Decisão
 
-| Condição / Regra | CT02 |
+| Condição / Regra | CT01 |
 | :--- | :---: |
-| **R1 — Nome preenchido** | S |
-| **R2 — E-mail preenchido e válido** | S |
-| **R3 — Senha >= 8 caracteres** | S |
-| **R4 — Confirmar Senha igual à Senha** | S |
-| **R5 — Email informado já está cadastrado** | S |
-| **Resultado Esperado** | Mensagem de erro na tela: "Este e-mail já está sendo utilizado por outro usuário" |
+| **R1 — Email preenchido e válido** | S |
+| **R2 — Senha preenchida** | S |
+| **R3 — Credenciais existentes no sistema** | S |
+| **Resultado Esperado** | Redirecionamento para a Home Page com título visível |
 
-### Caso de Teste Derivado (CT02)
+### Caso de Teste Derivado (CT01)
 
-* **Nome:** Kaio Farias
-* **E-mail:** kaio.duplicado@teste.com
-* **Senha:** senhaSegura123
-* **Confirmar Senha:** senhaSegura123
-* **Resultado Esperado:** O sistema deve bloquear o envio e exibir o alerta de e-mail duplicado na interface do usuário.
-
-**Link de referência no GitHub:**  
-https://github.com/kaiofa/Testes-Kaio/blob/main/P9-Interface-Docs.md
+* **E-mail:** idoso@teste.com
+* **Senha:** 123456
+* **Resultado Esperado:** O sistema deve autenticar o usuário e redirecionar para `http://localhost:5173/` exibindo o título "Daily Check-in Sênior".
