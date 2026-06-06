@@ -9,18 +9,21 @@
 | Ferramenta | Robot Framework + SeleniumLibrary |
 | Navegador | Google Chrome |
 | Ambiente | Local (localhost) |
-| URL | http://localhost:3000/home |
-| Data de execução | 03/06/2026 |
+| URL | http://localhost:5173/ |
+| Data de execução | 06/06/2026 |
 
 ### Casos de Teste e Evidências
 
-* **CT03 — Carregamento da página:** Resultado esperado: Título correspondente na aba. Resultado obtido: Título validado com sucesso. Status: Aprovado.
+* **CT02 — Carregamento da página:** Resultado esperado: Página home carregada com título visível. Resultado obtido: Página carregada e título validado com sucesso. Status: Aprovado.
+
+#### Evidências (Screenshots — Robot Framework)
+
+*<img width="1832" height="947" alt="Captura de tela 2026-06-06 005510" src="https://github.com/user-attachments/assets/d0912753-2978-46cf-ac8b-f8a371dcc360" />
+
+
 
 ### Resumo dos Resultados
 
 | Total de testes | Aprovados | Reprovados |
 | :---: | :---: | :---: |
 | 1 | 1 | 0 |
-
-**Link de referência no GitHub:**  
-https://github.com/kaiofa/Testes-Kaio/blob/main/P9-Interface-Docs.md
