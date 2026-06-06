@@ -1,20 +1,13 @@
 # Pergunta 12 — Modelagem do Teste de Interface (2)
 
-### Tela: Home Page (Pós-Autenticação)
+### Tela: Home Page (Daily Check-in Sênior)
 **Técnica Utilizada:** Tabela de Decisão  
-**Cenário:** Verificar carregamento e validação estrutural da página principal
+**Cenário:** Verificar se a página Home carrega corretamente após login
 
 ### Tabela de Decisão
 
-| Condição / Regra | CT03 |
+| Condição / Regra | CT02 |
 | :--- | :---: |
-| **R1 — Chamar URL válida da Home Page** | S |
-| **Resultado Esperado** | Página renderizada inteiramente com título correto na aba do navegador |
-
-### Caso de Teste Derivado (CT03)
-
-* **Ação:** Abrir a rota `/home`.
-* **Resultado Esperado:** O navegador deve validar se o elemento `Title` da aba corresponde exatamente a "Daily Check-in Sênior - Home".
-
-**Link de referência no GitHub:**  
-https://github.com/kaiofa/Testes-Kaio/blob/main/P9-Interface-Docs.md
+| **R1 — Usuário autenticado** | S |
+| **R2 — Acessar a URL da Home Page** | S |
+| **Resultado
