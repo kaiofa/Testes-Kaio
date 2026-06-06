@@ -18,10 +18,11 @@
 
 #### Evidências (Screenshots — Robot Framework)
 
-*<img width="1920" height="847" alt="selenium-screenshot-3" src="https://github.com/user-attachments/assets/c0b14b09-da2d-4157-b6b3-96f439eb8e45" />
-<img width="1920" height="847" alt="selenium-screenshot-2" src="https://github.com/user-attachments/assets/e79deac4-e24b-4acc-8c0d-ffc245119f56" />
 <img width="1920" height="847" alt="selenium-screenshot-1" src="https://github.com/user-attachments/assets/8ad93e7c-217e-4b30-bf4d-b70c950498d7" />
 
+<img width="1920" height="847" alt="selenium-screenshot-2" src="https://github.com/user-attachments/assets/e79deac4-e24b-4acc-8c0d-ffc245119f56" />
+
+<img width="1920" height="847" alt="selenium-screenshot-3" src="https://github.com/user-attachments/assets/c0b14b09-da2d-4157-b6b3-96f439eb8e45" />
 
 ### Resumo dos Resultados
 
